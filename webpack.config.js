@@ -34,8 +34,11 @@ module.exports = ['source-map'].map(devtool => ({
 		// 	- Variable: as a global variable made available by a script tag (libraryTarget:'var').
 		// 	- This: available through the this object (libraryTarget:'this').
 		// 	- Window: available through the `window` object, in the browser (libraryTarget:'window').
-		// 	- UMD: available after AMD or CommonJS require (libraryTarget:'umd').»
+		// 	- UMD: available after AMD or CommonJS require (libraryTarget:'umd').
+		// If `library` is set and `libraryTarget` is not,
+		// `libraryTarget` defaults to `var` as specified in the output configuration documentation.»
 		// https://webpack.js.org/guides/author-libraries#expose-the-library
+		// https://webpack.js.org/configuration/output
 		,libraryTarget: 'umd'
 		,path: path.resolve(__dirname, 'dist')
 	}
