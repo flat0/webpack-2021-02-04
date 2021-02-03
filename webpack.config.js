@@ -23,7 +23,7 @@ module.exports = ['source-map'].map(devtool => ({
 	,optimization: {runtimeChunk: true}
 	,output: {
 		filename: 'webpack-numbers.js'
+		,library: 'webpackNumbers'
 		,path: path.resolve(__dirname, 'dist')
-		,publicPath: '/' // 2021-02-03 https://webpack.js.org/guides/development#using-webpack-dev-middleware
 	}
 }));
