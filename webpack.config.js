@@ -27,6 +27,11 @@ module.exports = ['source-map'].map(devtool => ({
 		// «This exposes your library bundle available as a global variable named `webpackNumbers` when imported»
 		// https://webpack.js.org/guides/author-libraries#expose-the-library
 		,library: 'webpackNumbers'
+		// 2021-02-04
+		// «To make the library compatible with other environments, add `libraryTarget` property to the config.
+		// This will add various options about how the library can be exposed.»
+		// https://webpack.js.org/guides/author-libraries#expose-the-library
+		,libraryTarget: 'umd'
 		,path: path.resolve(__dirname, 'dist')
 	}
 }));
