@@ -18,7 +18,7 @@
 		"webpack"
 	],
 	"license": "MIT",
-	"main": "index.js",
+	"main": "dist/webpack-numbers.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/flat0/webpack-2021-02-04.git"
