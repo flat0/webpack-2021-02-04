@@ -3,12 +3,24 @@
 	"version": "0.0.1",
 	"description": "A test webpack application: «Authoring a Library»",
 	"author": "Dmitry Fedyuk",
-	"bugs": {"url": "https://github.com/flat0/webpack-2021-02-04/issues"},
+	"bugs": {
+		"url": "https://github.com/flat0/webpack-2021-02-04/issues"
+	},
+	"devDependencies": {
+		"lodash": "^4.17.20",
+		"webpack": "^5.20.1"
+	},
 	"homepage": "https://github.com/flat0/webpack-2021-02-04#readme",
-	"keywords": ["nodejs", "webpack"],
+	"keywords": [
+		"nodejs",
+		"webpack"
+	],
 	"license": "MIT",
 	"main": "index.js",
-	"repository": {"type": "git", "url": "git+https://github.com/flat0/webpack-2021-02-04.git"},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/flat0/webpack-2021-02-04.git"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	}
