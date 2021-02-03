@@ -23,6 +23,9 @@ module.exports = ['source-map'].map(devtool => ({
 	,optimization: {runtimeChunk: true}
 	,output: {
 		filename: 'webpack-numbers.js'
+		// 2021-02-04
+		// «This exposes your library bundle available as a global variable named `webpackNumbers` when imported»
+		// https://webpack.js.org/guides/author-libraries#expose-the-library
 		,library: 'webpackNumbers'
 		,path: path.resolve(__dirname, 'dist')
 	}
