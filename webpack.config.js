@@ -28,8 +28,13 @@ module.exports = ['source-map'].map(devtool => ({
 		// https://webpack.js.org/guides/author-libraries#expose-the-library
 		,library: 'webpackNumbers'
 		// 2021-02-04
-		// «To make the library compatible with other environments, add `libraryTarget` property to the config.
+		// 1) «To make the library compatible with other environments, add `libraryTarget` property to the config.
 		// This will add various options about how the library can be exposed.»
+		// 2) «You can expose the library in the following ways:
+		// 	- Variable: as a global variable made available by a script tag (libraryTarget:'var').
+		// 	- This: available through the this object (libraryTarget:'this').
+		// 	- Window: available through the `window` object, in the browser (libraryTarget:'window').
+		// 	- UMD: available after AMD or CommonJS require (libraryTarget:'umd').»
 		// https://webpack.js.org/guides/author-libraries#expose-the-library
 		,libraryTarget: 'umd'
 		,path: path.resolve(__dirname, 'dist')
